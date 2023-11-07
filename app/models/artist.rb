@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Artist < ApplicationRecord
-  has_many :songs, dependent: :destroy
+  has_many :tracks, dependent: :destroy
   has_many :albums, dependent: :destroy
 
   has_one :collaborator, dependent: :destroy

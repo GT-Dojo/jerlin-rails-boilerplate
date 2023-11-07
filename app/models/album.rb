@@ -4,7 +4,7 @@ class Album < ApplicationRecord
   belongs_to :artist
   belongs_to :publisher
 
-  has_many :songs, dependent: :destroy
+  has_many :tracks, dependent: :destroy
 
   validates :title, presence: true
   validates :title, length: { maximum: 200 }

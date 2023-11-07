@@ -3,6 +3,6 @@
 class Collaborator < ApplicationRecord
   belongs_to :artist
 
-  has_many :song_collaborator
-  has_many :songs, through: :song_collaborator
+  has_many :track_collaborators
+  has_many :tracks, through: :track_collaborators
 end

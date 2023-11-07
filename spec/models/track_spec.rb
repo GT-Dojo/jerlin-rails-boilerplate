@@ -2,11 +2,11 @@
 
 require 'rails_helper'
 
-RSpec.describe Song do
+RSpec.describe Track do
   describe 'associations' do
     it { is_expected.to belong_to(:artist).class_name('Artist') }
     it { is_expected.to belong_to(:album).class_name('Album') }
-    it { is_expected.to have_many(:collaborators).through(:song_collaborator) }
+    it { is_expected.to have_many(:collaborators).through(:track_collaborators) }
   end
 
   describe 'validations' do
