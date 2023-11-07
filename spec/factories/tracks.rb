@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :song do
+  factory :track do
     
   end
 end

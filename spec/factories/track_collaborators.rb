@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :song_collaborator do
+  factory :track_collaborator do
     song { nil }
     collaborator { nil }
   end
